@@ -1,0 +1,18 @@
+{
+    "sourceFile": "backend/.gitignore",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1754030226424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1754030226424,
+            "name": "Commit-0",
+            "content": ".env\r\nnode_modules"
+        }
+    ]
+}
