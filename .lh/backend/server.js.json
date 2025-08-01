@@ -1,0 +1,22 @@
+{
+    "sourceFile": "backend/server.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1754030774915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1754030836409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import express from \"express\"\r\n import mongoose from \"mongoose\"\r\n import cors from \"cors\"\r\n import dotenv from \"dotenv\"\r\n-import courseRoutes from \"./routes/courseRoutes\"\r\n-import enrollmentRoutes from './routes/enrollmentRoutes'\r\n+import courseRoutes from \"./routes/courseRoutes.js\"\r\n+import enrollmentRoutes from './routes/enrollmentRoutes.js'\r\n \r\n \r\n dotenv.config()\r\n const app=express()\r\n"
+                }
+            ],
+            "date": 1754030774915,
+            "name": "Commit-0",
+            "content": "import express from \"express\"\r\nimport mongoose from \"mongoose\"\r\nimport cors from \"cors\"\r\nimport dotenv from \"dotenv\"\r\nimport courseRoutes from \"./routes/courseRoutes\"\r\nimport enrollmentRoutes from './routes/enrollmentRoutes'\r\n\r\n\r\ndotenv.config()\r\nconst app=express()\r\napp.use(cors())\r\napp.use(express.json())\r\napp.use('/api/courses',courseRoutes)\r\napp.use('/api/enrollments',enrollmentRoutes)\r\n\r\nconst PORT=process.env.PORT||5000\r\nconst MONGO_URL=process.env.MONGO_URL\r\n\r\nmongoose.connect(MONGO_URL).then(()=>{\r\n    app.listen(PORT,()=>{\r\n        console.log(\"Server running on 5000 port\");\r\n        \r\n    })\r\n})\r\n.catch(err=> console.log(\"Mongodb connection error:\",err)\r\n)\r\n\r\n\r\n"
+        }
+    ]
+}

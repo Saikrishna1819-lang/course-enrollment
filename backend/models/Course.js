@@ -13,10 +13,10 @@ const courseSchema=new mongoose.Schema({
         type:String,
         required:true,
     },
-    Duration:{
+    duration:{
         type:String,
         required:true,
     },
 })
 
-export default mongoose.model(Course,courseSchema)
+export default mongoose.model("Course",courseSchema)

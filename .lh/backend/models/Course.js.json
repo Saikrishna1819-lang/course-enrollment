@@ -1,0 +1,26 @@
+{
+    "sourceFile": "backend/models/Course.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1754030685055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1754033195557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     description:{\r\n         type:String,\r\n         required:true,\r\n     },\r\n-    Duration:{\r\n+    duration:{\r\n         type:String,\r\n         required:true,\r\n     },\r\n })\r\n"
+                },
+                {
+                    "date": 1754033322515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n         required:true,\r\n     },\r\n })\r\n \r\n-export default mongoose.model(Course,courseSchema)\r\n+export default mongoose.model(\"Course\",courseSchema)\r\n"
+                }
+            ],
+            "date": 1754030685055,
+            "name": "Commit-0",
+            "content": "import mongoose from \"mongoose\";\r\n\r\nconst courseSchema=new mongoose.Schema({\r\n    title:{\r\n        type:String,\r\n        required:true,\r\n    },\r\n    instructor:{\r\n        type:String,\r\n        required:true,\r\n    },\r\n    description:{\r\n        type:String,\r\n        required:true,\r\n    },\r\n    Duration:{\r\n        type:String,\r\n        required:true,\r\n    },\r\n})\r\n\r\nexport default mongoose.model(Course,courseSchema)\r\n"
+        }
+    ]
+}

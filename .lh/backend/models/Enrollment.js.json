@@ -1,0 +1,18 @@
+{
+    "sourceFile": "backend/models/Enrollment.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1754031017881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1754031017881,
+            "name": "Commit-0",
+            "content": "import mongoose from \"mongoose\";\r\n\r\nconst enrollmentSchema = new mongoose.Schema({\r\n  studentEmail: {\r\n    type: String,\r\n    required: true,\r\n  },\r\n  course: {\r\n    type: mongoose.Schema.Types.ObjectId,\r\n    ref: \"Course\",\r\n    required: true,\r\n  },\r\n}, {\r\n  timestamps: true,\r\n});\r\n\r\nexport default mongoose.model(\"Enrollment\", enrollmentSchema);\r\n"
+        }
+    ]
+}
