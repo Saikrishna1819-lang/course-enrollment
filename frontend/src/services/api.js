@@ -3,17 +3,17 @@ import axios from 'axios'
 
 export const fetchCourses=async()=>{
 
-    const {data}=await axios.get(BASE_URL+'/courses')
+    const {data}=await axios.get(BASE_URL+'/api/courses')
     return data
 
 }
 
 export const fetchEnrollments=async()=>{
-    const {data}=await axios.get(BASE_URL+'/enrollments/me')
+    const {data}=await axios.get(BASE_URL+'/api/enrollments/me')
     return data
 }
 
 export const enrollCourse=async(courseId)=>{
-    const {data}=await axios.post(BASE_URL+'/enrollments',{courseId})
+    const {data}=await axios.post(BASE_URL+'/api/enrollments',{courseId})
     return data
 }
