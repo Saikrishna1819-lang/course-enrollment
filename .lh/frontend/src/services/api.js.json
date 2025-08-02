@@ -1,0 +1,18 @@
+{
+    "sourceFile": "frontend/src/services/api.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1754037420359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1754037420359,
+            "name": "Commit-0",
+            "content": "const BASE_URL=import.meta.env.VITE_BACKEND_URL\r\nimport axios from 'axios'\r\n\r\nexport const fetchCourses=async()=>{\r\n\r\n    const {data}=await axios.get(BASE_URL+'/courses')\r\n    return data\r\n\r\n}\r\n\r\nexport const fetchEnrollments=async()=>{\r\n    const {data}=await axios.get(BASE_URL+'/enrollments/me')\r\n    return data\r\n}\r\n\r\nexport const enrollCourse=async(courseId)=>{\r\n    const {data}=await axios.post(BASE_URL+'/enrollments',{courseId})\r\n    return data\r\n}"
+        }
+    ]
+}

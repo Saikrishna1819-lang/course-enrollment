@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1754033136667,
@@ -12,6 +12,10 @@
                 {
                     "date": 1754033262475,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import express from \"express\"\r\n-import Enrollment from \"../models/Enrollment\"\r\n-import Course from \"../models/Course\"\r\n+import Enrollment from \"../models/Enrollment.js\"\r\n+import Course from \"../models/Course.js\"\r\n \r\n const enrollRouter=express.Router()\r\n \r\n const DUMMY_EMAIL='dummy@student.com'\r\n"
+                },
+                {
+                    "date": 1754043477550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,18 +4,23 @@\n \r\n const enrollRouter=express.Router()\r\n \r\n const DUMMY_EMAIL='dummy@student.com'\r\n-enrollRouter.get('/me',async(req,res)=>{\r\n-    try {\r\n-        const enrollments=await Enrollment.find({studentEmail:DUMMY_EMAIL}).populate(\"course\")\r\n-        res.status(200).json(enrollments)\r\n-    } catch (error) {\r\n-        res.status(500).json({message:\"Failed to fetch Data of Enrollments\",error})\r\n-        \r\n-    }\r\n-})\r\n+enrollRouter.get('/me', async (req, res) => {\r\n+  try {\r\n+   \r\n+    const enrollments = await Enrollment.find({ studentEmail: DUMMY_EMAIL }).populate(\"course\");\r\n \r\n+   \r\n+    const enrolledCourses = enrollments.map((enrollment) => enrollment.course);\r\n+\r\n+    res.status(200).json(enrolledCourses);\r\n+  } catch (error) {\r\n+    res.status(500).json({ message: \"Failed to fetch enrolled courses\", error });\r\n+  }\r\n+});\r\n+\r\n+\r\n enrollRouter.post('/',async(req,res)=>{\r\n     const {courseId}=req.body\r\n     if(!courseId){\r\n         return res.status(400).json({message:\"Course Id is required\"})\r\n"
                 }
             ],
             "date": 1754033136667,

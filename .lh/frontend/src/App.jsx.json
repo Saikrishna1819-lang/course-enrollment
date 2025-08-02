@@ -1,0 +1,166 @@
+{
+    "sourceFile": "frontend/src/App.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 37,
+            "patches": [
+                {
+                    "date": 1754039340451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1754039409517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from \"react\"\n \n const App=()=>{\n   return(\n-    <div className=\"min-h-screen bg-gray-100 p-4\">\n+    <div className=\"min-h-screen bg-gray-900 p-4\">\n       <h1 className=\"text-3xl font-bold text-center mb-6\">Learning Management System</h1>\n       <CourseList/>\n \n     </div>\n"
+                },
+                {
+                    "date": 1754039434416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from \"react\"\n \n const App=()=>{\n   return(\n-    <div className=\"min-h-screen bg-gray-900 p-4\">\n+    <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n       <h1 className=\"text-3xl font-bold text-center mb-6\">Learning Management System</h1>\n       <CourseList/>\n \n     </div>\n"
+                },
+                {
+                    "date": 1754039575975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <h1 className=\"text-3xl font-bold text-center mb-6\">Learning Management System</h1>\n+      <h1 className=\"text-3xl font-bold text-center mb-10\">Learning Management System</h1>\n       <CourseList/>\n \n     </div>\n   )\n"
+                },
+                {
+                    "date": 1754039797825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,15 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <h1 className=\"text-3xl font-bold text-center mb-10\">Learning Management System</h1>\n+      <div className=\"w-full px-6 py-2\">\n+        <h2>LMS</h2>\n+        <h2>Welcome</h2>\n+      </div>\n+      <div>\n+        <button>My </button>\n+      </div>\n       <CourseList/>\n \n     </div>\n   )\n"
+                },
+                {
+                    "date": 1754039806247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <div className=\"w-full px-6 py-2\">\n+      <div className=\"w-full px-6 py-2 flex\">\n         <h2>LMS</h2>\n         <h2>Welcome</h2>\n       </div>\n       <div>\n"
+                },
+                {
+                    "date": 1754039846607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,14 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <div className=\"w-full px-6 py-2 flex\">\n-        <h2>LMS</h2>\n+      <div className=\"w-full px-6 py-2 flex justify-between\">\n+        <h2 className=\"text-2xl\">LMS</h2>\n         <h2>Welcome</h2>\n       </div>\n       <div>\n-        <button>My </button>\n+        >\n       </div>\n       <CourseList/>\n \n     </div>\n"
+                },
+                {
+                    "date": 1754039854154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n       <div className=\"w-full px-6 py-2 flex justify-between\">\n-        <h2 className=\"text-2xl\">LMS</h2>\n+        <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2>Welcome</h2>\n       </div>\n       <div>\n         >\n"
+                },
+                {
+                    "date": 1754039882994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,11 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <div className=\"w-full px-6 py-2 flex justify-between\">\n+      <div className=\"w-full items-center px-6 py-2 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n-        <h2>Welcome</h2>\n+        <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n       <div>\n         >\n       </div>\n"
+                },
+                {
+                    "date": 1754039891857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <div className=\"w-full items-center px-6 py-2 flex justify-between\">\n+      <div className=\"w-full items-center border-b px-6 py-2 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n       <div>\n"
+                },
+                {
+                    "date": 1754039902057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <div className=\"w-full items-center border-b px-6 py-2 flex justify-between\">\n+      <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n       <div>\n"
+                },
+                {
+                    "date": 1754039935244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,11 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 flex justify-between\">\n+      <div className=\"w-full items-center border-b border-gray-500 px-6 py-2 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n-        <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n+        <h2 className=\"tet-2xl font-semibold\">Welcome</h2>\n       </div>\n       <div>\n         >\n       </div>\n"
+                },
+                {
+                    "date": 1754039945716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"tet-2xl font-semibold\">Welcome</h2>\n       </div>\n       <div>\n-        >\n+        \n       </div>\n       <CourseList/>\n \n     </div>\n"
+                },
+                {
+                    "date": 1754039956995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,14 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <div className=\"w-full items-center border-b border-gray-500 px-6 py-2 flex justify-between\">\n+      <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n-        <h2 className=\"tet-2xl font-semibold\">Welcome</h2>\n+        <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n       <div>\n-        \n+        >\n       </div>\n       <CourseList/>\n \n     </div>\n"
+                },
+                {
+                    "date": 1754039982894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,14 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 flex justify-between\">\n+      <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 mb-20 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n       <div>\n-        >\n+        \n       </div>\n       <CourseList/>\n \n     </div>\n"
+                },
+                {
+                    "date": 1754040030350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n       <div>\n-        \n+        Learning Management System\n       </div>\n       <CourseList/>\n \n     </div>\n"
+                },
+                {
+                    "date": 1754040038567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 mb-20 flex justify-between\">\n+      <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n       <div>\n"
+                },
+                {
+                    "date": 1754040046752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n       <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n-      <div>\n+      <div className=\"text-center\">\n         Learning Management System\n       </div>\n       <CourseList/>\n \n"
+                },
+                {
+                    "date": 1754040054313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n       <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n-      <div className=\"text-center\">\n+      <div className=\"text-center mb-14\">\n         Learning Management System\n       </div>\n       <CourseList/>\n \n"
+                },
+                {
+                    "date": 1754040065111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n       <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n-      <div className=\"text-center mb-14\">\n+      <div className=\"text-center mb-14 text-3xl\">\n         Learning Management System\n       </div>\n       <CourseList/>\n \n"
+                },
+                {
+                    "date": 1754040071647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n       <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n-      <div className=\"text-center mb-14 text-3xl\">\n+      <div className=\"text-center mb-14 text-3xl font-bold\">\n         Learning Management System\n       </div>\n       <CourseList/>\n \n"
+                },
+                {
+                    "date": 1754040182171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,12 @@\n       </div>\n       <div className=\"text-center mb-14 text-3xl font-bold\">\n         Learning Management System\n       </div>\n+      <div className=\"text-center\">\n+        <h1 className=\"text-2xl font-bold\">Learn. Succed</h1>\n+        <p className=\"text-2xl font-bold\">Start your Journey Today</p>\n+      </div>\n       <CourseList/>\n \n     </div>\n   )\n"
+                },
+                {
+                    "date": 1754040200292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n       <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n-      <div className=\"text-center mb-14 text-3xl font-bold\">\n+      <div className=\"text-center mb-6 text-3xl font-bold\">\n         Learning Management System\n       </div>\n       <div className=\"text-center\">\n         <h1 className=\"text-2xl font-bold\">Learn. Succed</h1>\n"
+                },
+                {
+                    "date": 1754040215033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       </div>\n       <div className=\"text-center mb-6 text-3xl font-bold\">\n         Learning Management System\n       </div>\n-      <div className=\"text-center\">\n+      <div className=\"text-center mb-10\">\n         <h1 className=\"text-2xl font-bold\">Learn. Succed</h1>\n         <p className=\"text-2xl font-bold\">Start your Journey Today</p>\n       </div>\n       <CourseList/>\n"
+                },
+                {
+                    "date": 1754040258574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,13 @@\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n       <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n+        <h2 className=\"text-2xl font-bold\"> Learning Management System</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n       <div className=\"text-center mb-6 text-3xl font-bold\">\n-        Learning Management System\n+       \n       </div>\n       <div className=\"text-center mb-10\">\n         <h1 className=\"text-2xl font-bold\">Learn. Succed</h1>\n         <p className=\"text-2xl font-bold\">Start your Journey Today</p>\n"
+                },
+                {
+                    "date": 1754040290939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n const App=()=>{\n   return(\n     <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n-      <div className=\"w-full items-center border-b border-gray-300 px-6 py-2 mb-10 flex justify-between\">\n+      <div className=\"w-full items-center border-b border-gray-300 px-6 py-4 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"text-2xl font-bold\"> Learning Management System</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n       </div>\n"
+                },
+                {
+                    "date": 1754040376506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,11 @@\n       <div className=\"text-center mb-10\">\n         <h1 className=\"text-2xl font-bold\">Learn. Succed</h1>\n         <p className=\"text-2xl font-bold\">Start your Journey Today</p>\n       </div>\n+      <div>\n+        <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">My Courses</button>\n+      </div>\n       <CourseList/>\n \n     </div>\n   )\n"
+                },
+                {
+                    "date": 1754040454134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n         <p className=\"text-2xl font-bold\">Start your Journey Today</p>\n       </div>\n       <div>\n         <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">My Courses</button>\n+        <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">All Courses</button>\n       </div>\n       <CourseList/>\n \n     </div>\n"
+                },
+                {
+                    "date": 1754040465525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       <div className=\"text-center mb-10\">\n         <h1 className=\"text-2xl font-bold\">Learn. Succed</h1>\n         <p className=\"text-2xl font-bold\">Start your Journey Today</p>\n       </div>\n-      <div>\n+      <div className=\"gap-5\">\n         <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">My Courses</button>\n         <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">All Courses</button>\n       </div>\n       <CourseList/>\n"
+                },
+                {
+                    "date": 1754040473935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       <div className=\"text-center mb-10\">\n         <h1 className=\"text-2xl font-bold\">Learn. Succed</h1>\n         <p className=\"text-2xl font-bold\">Start your Journey Today</p>\n       </div>\n-      <div className=\"gap-5\">\n+      <div className=\"gap-5 flex\">\n         <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">My Courses</button>\n         <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">All Courses</button>\n       </div>\n       <CourseList/>\n"
+                },
+                {
+                    "date": 1754040479609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       <div className=\"text-center mb-10\">\n         <h1 className=\"text-2xl font-bold\">Learn. Succed</h1>\n         <p className=\"text-2xl font-bold\">Start your Journey Today</p>\n       </div>\n-      <div className=\"gap-5 flex\">\n+      <div className=\"gap-5 flex mb-5\">\n         <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">My Courses</button>\n         <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">All Courses</button>\n       </div>\n       <CourseList/>\n"
+                },
+                {
+                    "date": 1754040488317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,13 +11,13 @@\n       </div>\n       <div className=\"text-center mb-6 text-3xl font-bold\">\n        \n       </div>\n-      <div className=\"text-center mb-10\">\n+      <div className=\"text-center mb-50\">\n         <h1 className=\"text-2xl font-bold\">Learn. Succed</h1>\n         <p className=\"text-2xl font-bold\">Start your Journey Today</p>\n       </div>\n-      <div className=\"gap-5 flex mb-5\">\n+      <div className=\"gap-5 flex mb-10\">\n         <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">My Courses</button>\n         <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">All Courses</button>\n       </div>\n       <CourseList/>\n"
+                },
+                {
+                    "date": 1754040500042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,13 +11,13 @@\n       </div>\n       <div className=\"text-center mb-6 text-3xl font-bold\">\n        \n       </div>\n-      <div className=\"text-center mb-50\">\n+      <div className=\"text-center mb-5\">\n         <h1 className=\"text-2xl font-bold\">Learn. Succed</h1>\n         <p className=\"text-2xl font-bold\">Start your Journey Today</p>\n       </div>\n-      <div className=\"gap-5 flex mb-10\">\n+      <div className=\"gap-5 flex mb-10 justify-center\">\n         <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">My Courses</button>\n         <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">All Courses</button>\n       </div>\n       <CourseList/>\n"
+                },
+                {
+                    "date": 1754040522384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from \"react\"\n \n const App=()=>{\n   return(\n-    <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n+    <div className=\"min-h-screen bg-gray-[#0f0f0f] text-white p-4\">\n       <div className=\"w-full items-center border-b border-gray-300 px-6 py-4 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"text-2xl font-bold\"> Learning Management System</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n"
+                },
+                {
+                    "date": 1754040529740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from \"react\"\n \n const App=()=>{\n   return(\n-    <div className=\"min-h-screen bg-gray-[#0f0f0f] text-white p-4\">\n+    <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n       <div className=\"w-full items-center border-b border-gray-300 px-6 py-4 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"text-2xl font-bold\"> Learning Management System</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n"
+                },
+                {
+                    "date": 1754040571669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from \"react\"\n \n const App=()=>{\n   return(\n-    <div className=\"min-h-screen bg-gray-900 text-white p-4\">\n+    <div className=\"min-h-screen bg-[#222222] text-white p-4\">\n       <div className=\"w-full items-center border-b border-gray-300 px-6 py-4 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"text-2xl font-bold\"> Learning Management System</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n"
+                },
+                {
+                    "date": 1754040643006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from \"react\"\n \n const App=()=>{\n   return(\n-    <div className=\"min-h-screen bg-[#222222] text-white p-4\">\n+    <div className=\"min-h-screen bg-[#141414] text-white p-4\">\n       <div className=\"w-full items-center border-b border-gray-300 px-6 py-4 mb-10 flex justify-between\">\n         <h2 className=\"text-2xl font-semibold\">LMS</h2>\n         <h2 className=\"text-2xl font-bold\"> Learning Management System</h2>\n         <h2 className=\"tet-xl font-semibold\">Welcome</h2>\n"
+                },
+                {
+                    "date": 1754042335369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,9 @@\n       <div className=\"text-center mb-5\">\n         <h1 className=\"text-2xl font-bold\">Learn. Succed</h1>\n         <p className=\"text-2xl font-bold\">Start your Journey Today</p>\n       </div>\n-      <div className=\"gap-5 flex mb-10 justify-center\">\n-        <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">My Courses</button>\n-        <button className=\"bg-pink-400 px-6 py-2 rounded-lg hover:bg-pink-600 \">All Courses</button>\n-      </div>\n+     \n       <CourseList/>\n \n     </div>\n   )\n"
+                }
+            ],
+            "date": 1754039340451,
+            "name": "Commit-0",
+            "content": "import CourseList from \"./components/CourseList\"\nimport React from \"react\"\n\nconst App=()=>{\n  return(\n    <div className=\"min-h-screen bg-gray-100 p-4\">\n      <h1 className=\"text-3xl font-bold text-center mb-6\">Learning Management System</h1>\n      <CourseList/>\n\n    </div>\n  )\n}\n\nexport default App"
+        }
+    ]
+}

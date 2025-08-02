@@ -5,15 +5,20 @@ import Course from "../models/Course.js"
 const enrollRouter=express.Router()
 
 const DUMMY_EMAIL='dummy@student.com'
-enrollRouter.get('/me',async(req,res)=>{
-    try {
-        const enrollments=await Enrollment.find({studentEmail:DUMMY_EMAIL}).populate("course")
-        res.status(200).json(enrollments)
-    } catch (error) {
-        res.status(500).json({message:"Failed to fetch Data of Enrollments",error})
-        
-    }
-})
+enrollRouter.get('/me', async (req, res) => {
+  try {
+   
+    const enrollments = await Enrollment.find({ studentEmail: DUMMY_EMAIL }).populate("course");
+
+   
+    const enrolledCourses = enrollments.map((enrollment) => enrollment.course);
+
+    res.status(200).json(enrolledCourses);
+  } catch (error) {
+    res.status(500).json({ message: "Failed to fetch enrolled courses", error });
+  }
+});
+
 
 enrollRouter.post('/',async(req,res)=>{
     const {courseId}=req.body
