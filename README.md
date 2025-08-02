@@ -169,8 +169,6 @@ VITE_API_URL=http://localhost:5000
 
 ---
 
-##  Acknowledgements
 
-This project was built as a take-home assignment for the **MERN Stack Intern role** at **Munificent Technology Services, Nashik**.
 
 
